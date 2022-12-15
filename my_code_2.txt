@@ -7,3 +7,6 @@ void inorderTranversal(Node root){
 	print(root.data);
 	inordereTraversal(root.right);
 }
+
+Upper code is recursive approach for Binary tree
+inorder traversal.
