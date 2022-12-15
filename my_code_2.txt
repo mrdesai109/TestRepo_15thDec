@@ -1,0 +1,9 @@
+
+void inorderTranversal(Node root){
+	if(root == null){
+		return;
+	}
+	inorderTraversal(root.left);
+	print(root.data);
+	inordereTraversal(root.right);
+}
