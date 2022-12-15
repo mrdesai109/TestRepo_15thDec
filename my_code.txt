@@ -16,3 +16,20 @@ int binarySearch(int[] a,int key){
 
 	return -1;
 }
+
+//Recursive version(for branch_1)
+
+int binSearch(int[] a, int key, int low, int high){
+	if(low > high){
+		return -1;
+	}
+	int mid = low + high/2;
+	if(a[mid]==key){
+		return mid;
+	}
+	if(key < a[mid]){
+		return binSearch(a,key,low,mid-1);
+	}else{
+		return binSearch(a,key,mid+1,high);
+	}
+}
