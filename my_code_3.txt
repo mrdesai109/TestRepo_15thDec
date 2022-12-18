@@ -8,3 +8,5 @@ int height(Node root){
 	int heightRight = height(root.right);
 	return 1 + max(heightLeft,heightRight);	
 }
+
+Test for branch_3.
