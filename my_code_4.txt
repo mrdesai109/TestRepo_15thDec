@@ -1,0 +1,23 @@
+Code To Print Level Order Traversal Of A Tree
+
+void printLevelOrder(Node root){
+	if(root == null){
+		return;
+	}
+
+	Queue<Node> q = new LinkedList<>();
+	q.add(root);
+	
+	while(q.isNotEmpty()){
+		Node cur = q.poll();
+		print(cur.data);
+	
+		if(cur.left != null){
+			q.add(cur.left);
+		}
+
+		if(cur.right != null){
+			q.add(cur.right);
+		}
+	}
+}
